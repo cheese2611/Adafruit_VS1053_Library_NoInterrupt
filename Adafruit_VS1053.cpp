@@ -85,7 +85,7 @@ boolean Adafruit_VS1053_FilePlayer::useInterrupt(uint8_t type) {
 #if defined(SPI_HAS_TRANSACTION) && !defined(ESP8266) && !defined(ESP32) && !defined(ARDUINO_STM32_FEATHER)
     SPI.usingInterrupt(irq);
 #endif
-    attachInterrupt(irq, feeder, CHANGE);
+    //attachInterrupt(irq, feeder, CHANGE);
     return true;
   }
   return false;
